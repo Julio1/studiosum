@@ -21,15 +21,14 @@ public class Main{
 
 	
 
-		Perro objPerroPolicia= new Perro ("Pastor alemán","Negro con bordes café");
+		Perro miPerro= new Perro ("Pastor alemán","Negro con bordes café");
 
-        out.println(objPerroPolicia.toString());
+        Gato miGato = new Gato ("Siames","Blanco con manchas negras");
 
-        Gato objPerroCompannia= new Gato ("Siames","Blanco con manchas negras");
+        out.println(miPerro.toString());
 
-        out.println(objPerroCompannia.toString());
-
-
+   
+        
      
 }
 

@@ -24,7 +24,14 @@ public class Perro extends Animal {
 
     public  String getColor () {return color;  }
     
-    
+    public String emitirSonido (){
+		
+    	String sonido="Rof Rof!";
+    		
+    		
+    		return sonido;
+    }
+
     
 
 
