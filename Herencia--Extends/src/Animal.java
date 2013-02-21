@@ -14,7 +14,7 @@ public abstract class  Animal {
 	private String nombre;
 	private String id;
 	
-	static int cantPerros=0;
+	static int cantAnimales=0;
 	
 	public Animal(String praza){
 		setTipo(praza);
@@ -28,8 +28,8 @@ public abstract class  Animal {
 
     
     public void setId(){
-    	cantPerros++;
-    	id=cantPerros+"";
+    	cantAnimales++;
+    	id=cantAnimales+"";
     }
     
     public String getId(){
