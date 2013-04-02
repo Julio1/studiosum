@@ -17,7 +17,19 @@ public class Fecha {
 	
 	
 	
-	
+	public String toString (){
+		
+		String msj;
+		
+		msj="La fecha #1 es: "+fecha1 +"\n"; 
+		msj="La fecha #1 es: "+fecha2 +"\n"; 
+		
+		
+		return null;
+		
+		
+		
+	}
 	
 	
 	
