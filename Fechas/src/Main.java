@@ -66,7 +66,6 @@ public class Main {
 		boolean noSalir = true;
 		
 		SimpleDateFormat formatFecha = new SimpleDateFormat("dd-MM-yyyy");
-		
 		Fecha Ejemplo =new Fecha();
 		Amigo miAmigo =new Amigo();
 		
@@ -87,8 +86,7 @@ public class Main {
 			     
 			     
 			     out.print(Ejemplo.toString());
-			     out.print(Ejemplo.getFecha1());
-			     
+			       
 			     
 			     out.print(miAmigo.toString());
 			     
