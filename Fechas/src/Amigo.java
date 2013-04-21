@@ -26,11 +26,12 @@ public class Amigo {
 			String msj;
 			
 			msj="El nombre del amigo es :"+getNombre() + "\n";
+			msj+="\n";
 			
 			
 			return msj;
 		}
-		
+
 		
 }
 	

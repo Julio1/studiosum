@@ -1,21 +1,25 @@
+package Presentacion;
 
 
-
+import Logica.Gestor;
 import java.io.*;
-import java.util.Date;
-import java.text.SimpleDateFormat;
 import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
-public class Main {
+
+public class Main  {
 	
-	static BufferedReader in = new BufferedReader (new InputStreamReader (System.in) );
-	static PrintStream out = System.out;
-	static public  Fecha Ejemplo =new Fecha();
-	static Amigo miAmigo =new Amigo();
+	//static BufferedReader in = new BufferedReader (new InputStreamReader(System.in));
+	
+	//static BufferedReader in= new BufferedReader(new InputStreamReader(System.in));
+	
+	static BufferedReader in= new BufferedReader(new InputStreamReader(System.in));
+	static PrintStream out= System.out;
 	
 	public static void main (String [] args) throws IOException, ParseException{
 		
-	
+		
 		int opc;
 		boolean noSalir = true;
 		
@@ -24,28 +28,22 @@ public class Main {
 			opc = leerOpcion();
 			noSalir = ejecutarAccion(opc);
 		}while(noSalir);
-
-		
+	
 		
 	}
 	
 	static public void mostrarMenu (){
 		
 		out.println("*****************************");
-    	out.println("     MENU DE FECHAS     ");
+    	out.println("     MENU DE AMIGO     ");
     	out.println("*****************************");
     	
-		out.println("1. Agregar Fechas");
+		out.println("1. Agregar Amigo");
 		out.println("2. Comparar Fecha");
 		out.println("3. Datos");
 		out.println("4. Salir");
 		out.println("\n");
-		
-	
-		
-		
-		
-		
+				
 	}
 	
 	
@@ -74,35 +72,29 @@ public class Main {
 
 			case 1: //Introducir Fecha
 				
-			  	out.println("    Dame la primera fecha :   " + "\n");
+			  	out.println("    Dame el nombre del amigo :   " + "\n");
+			  	String nombreAmigo =in.readLine();
+			  	
+			  	out.println("    Dame la fecha de nascimiento :   " + "\n");
 			  	Date fecha1 =formatFecha.parse(in.readLine());
+
+			  	Gestor objGestor=  new	Gestor();
+			  	    
+			  	objGestor.registrarAmigo(nombreAmigo, fecha1);
 			  	
-			  	out.println("    Dame la primera fecha :   " + "\n");
-			  	Date fecha2 =formatFecha.parse(in.readLine());
-			 
-			 //	out.println("    Dame la el nombre de tu amigo :  " + "\n");
-			 // 	String nombreAmigo =in.readLine();
-			  	
-			  	
-			     Ejemplo.setFecha1(fecha1);
-			     Ejemplo.setFecha2(fecha2);
-			  //   miAmigo.setNombre(nombreAmigo);
-			 //    out.print(Ejemplo.toString());
-			//     out.print(miAmigo.toString());
-			     
 				break;
 				
 
 			case 2: //Comparar Fecha
 				
-				out.println(Ejemplo.compararFechas());
+				//out.println(Ejemplo.compararFechas());
 				
 				break;
 				
 		
 			case 3: //ToString
 				
-				out.print(Ejemplo.toString());
+				//out.print(Ejemplo.toString());
 				//out.print(miAmigo.toString());
 				
 				break;
@@ -126,8 +118,8 @@ public class Main {
 	
 	
 	
-	}
 	
 	
 	
-	
+}
+
