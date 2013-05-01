@@ -12,7 +12,7 @@ public class MultiAmigo{
 	
 		java.sql.Date pfechaNascimientoSql = new java.sql.Date(pfechaNascimiento.getTime()); 
 		
-		out.println("la fecha del nascimiento sin formatear"+ pfechaNascimiento+"\n");
+		out.println("la fecha del nascimiento sin formatear: "+ pfechaNascimiento+"\n");
 		
 		out.println("la fecha del nascimiento con formato"+ pfechaNascimientoSql+"\n");
 		
