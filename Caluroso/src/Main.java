@@ -22,7 +22,7 @@ public class Main {
 			//Class.forName("com.microsoft.jdbc.sqlserver.SQLServerDriver");
 			conn = DriverManager.getConnection(CONN_STRING, USERNAME, PASSWORD);
 			stmt = conn.createStatement();
-			 stmt.executeQuery("INSERT INTO [TAmigo] ([Nombre],[FechaNac])  VALUES  ('Jordi','3-30-1991')");
+			 stmt.executeQuery("INSERT INTO [TAmigo] ([Nombre],[FechaNac])  VALUES  ('Jayce the ace','3-30-1991')");
 			System.out.println("Connected."); 
 
 			

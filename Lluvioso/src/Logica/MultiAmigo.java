@@ -18,7 +18,7 @@ public class MultiAmigo{
 		
 		
 	 //String sql="INSERT INTO TAmigo (Nombre,FechaNac) VALUES ( '"+pnombre+"', #"+pfechaNascimiento+"#)";
-		String sql="INSERT INTO [BDNublado].[dbo].[TAmigo] ([Nombre],[FechaNac])  VALUES  ('"+pnombre+ "',' " +pfechaNascimientoSql+ "')";
+		String sql="INSERT INTO [TAmigo] ([Nombre],[FechaNac])  VALUES  ('"+pnombre+ "',' " +pfechaNascimientoSql+ "')";
 		
 	 try {
 		Conector.getConector().ejecutarSQL(sql);
