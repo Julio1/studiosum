@@ -99,5 +99,53 @@ public class Gestor{
 */
 	
 	
+	public String getNombreAmigo (int opcion, int id) throws Exception{
+
+		String msj="";
+			
+		switch (opcion) {
+
+
+		case 1:
+			
+			if (id==1) {
+				
+				msj="El primero esta bien \n";
+				
+			} else {
+				msj="El primero esta mal \n";
+			}
+			break;
+
+		case 2:
+
+			msj=(id==2)?"El primero esta bien \n":"El primero esta mal \n";
+			
+			break;
+		case 3:
+
+			if(id!=3){
+				
+				msj="Esto se esta volviendo loco \n";
+				
+			} 
+			break;
+		
+		default:
+			msj=("Que haces puto ?");
+			break;
+		}
+
+		return msj;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 }

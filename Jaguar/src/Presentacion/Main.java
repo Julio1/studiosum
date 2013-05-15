@@ -95,8 +95,18 @@ public class Main  {
 		
 			case 3: //ToString
 				
-				//out.print(Ejemplo.toString());
-				//out.print(miAmigo.toString());
+				
+				out.println("Dame la opcion :   " + "\n");
+			  	int opcion2 = Integer.parseInt(in.readLine());
+			  	
+			  	
+				out.println("Dame el id del amigo :   " + "\n");
+			  	int id = Integer.parseInt(in.readLine());
+			  	
+			  	objGestor.getNombreAmigo(opcion2, id);
+			  	out.print(objGestor.getNombreAmigo(opcion2, id));
+				
+							
 				
 				break;
 				
